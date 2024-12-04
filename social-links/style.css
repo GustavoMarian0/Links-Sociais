@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 8%);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card {
+    background-color: hsl(0, 0%, 12%);
+    width: 350px;
+    height: 570px;
+    text-align: center;
+    margin: 0px 30px 0px 30px;
+    margin-top: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 18px rgb(117, 122, 126);
+    place-items: center; 
+}
+
+.img img{
+    height: 120px;
+    width: 120px;
+    border-radius: 80px;
+    margin-top: 20px;
+}
+
+.text {
+    color: azure;
+    font-family: "Inter", sans-serif;
+}
+
+#city {
+    color: hsl(214, 72%, 81%);
+    margin-top: -10px;
+    font-weight: 400;
+}
+
+#dev {
+    color: hsl(0, 1%, 66%);
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.buttons button {
+    margin-top: 25px;
+    width: 280px;
+    height: 40px;
+    background-color: hsl(0, 0%, 20%);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    text-decoration: none;
+    color: hsl(0, 0%, 90%);
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.buttons button:hover {
+    transform: scale(1.2) translateZ(25px);
+}
+
+/*Celular*/
+
+@media only screen and (max-width:767px) {
+    .card {
+        margin-top: 50px;
+    }
+
+    .buttons button {
+        transition: none;
+    }
+
+    .buttons button:hover {
+        transform: none;
+    }
+}
+
+/*Tablet*/
+
+@media only screen and (min-width:767px) and (max-width:991px) {
+    .buttons button {
+        transition: none;
+    }
+
+    .buttons button:hover {
+        transform: none;
+    }
+}
